@@ -1,0 +1,22 @@
+// @green: #afc22a;
+// @limeTrans: #f2f8d2;
+@lime: #d0e54c;
+@b: 7rem;
+
+main {
+  display: flex;
+  gap: 1rem;
+  div {
+    width: 14rem;
+    height: @b;
+    border: solid (@b * 0.1) (@lime - #222);
+  }
+
+  div:first-child {
+    background-color: @lime;
+  }
+
+  div {
+    background-color: lighten(hsl(@lime), 30%);
+  }
+}
